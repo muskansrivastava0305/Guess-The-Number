@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            background-color: black;
+
+        }
+
+        .container {
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(85, 84, 84);
+            color: antiquewhite;
+            padding: 2rem;
+        }
+
+        h3 {
+            color: chocolate;
+            text-align: center;
+            background-color: aquamarine;
+            padding: 1rem;
+            font-size: 2rem;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            margin: 1rem;
+        }
+
+        #game {
+            width: 100%;
+            border-radius: 0.7rem;
+            height: 40px;
+            margin: 1rem;
+            align-items: center;
+            text-align: center;
+        }
+
+        #subm {
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0.7rem;
+            margin: 1rem;
+        }
+
+        .guesses {
+            background-color: gray;
+            color: burlywood;
+            padding: 0.5rem;
+            margin: 1rem;
+        }
+
+        .lastresult {
+            background-color: gray;
+            color: rgb(255, 211, 155);
+            padding: 0.5rem;
+            margin: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h3>Number gussing game</h3>
+        <div class="container">
+            <p>Try and guess a random number between 1 and 100</p>
+            <p>You have 10 attempts to guess the right number</p>
+            <h1>Guess a number</h1>
+            <input type="text" id="game">
+            <input type="submit" id="subm" value="Submit guess">
+
+            <div class="resultPass">
+                <p>Previous Guesses: <span class="guesses"></span></p>
+                <p>Guesses Remaining: <span class="lastresult">10</span></p>
+                <div>
+                    <p class="lowhig"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="number.js"></script>
+</body>
+
+</html>
